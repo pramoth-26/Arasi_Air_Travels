@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arasi Air Travels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Font -->
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(90deg, #47a3c7, #1f2a44);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    /* Logo styling */
+    .logo {
+      position: absolute;
+      /* top: 20px; */
+      left: 45%;
+      width: 120px; /* Adjust the logo size as needed */
+    }
+
+    header h1 {
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      background-color: #005c8e;
+      border-radius: 5px;
+    }
+
+    /* Main Content */
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Travel Booking Section */
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Tour Packages Section */
+    .tour-packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .tour-card {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer .contact-info {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        padding: 12px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .service-card, .tour-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <!-- Logo -->
+    
+    <h1> Arasi Air Travels</h1>
+    <p>Your premium travel partner for a luxurious journey</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#travel-booking">Travel Booking</a>
+    <a href="#tour-packages">Tour Packages</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <br><h2>Discover the Best Travel Services</h2>
+    <img src="logo.png" alt="Arasi Air Travels Logo" class="logo">
+    <br><br><br>
+    <br><br>
+    
+    <p>We provide an array of services to make your travel smooth, luxurious, and hassle-free. Book your tickets, tours, and more with us!</p>
+    <br><br>
+  </section>
+
+  <!-- Travel Booking Section -->
+  <section id="travel-booking" class="section">
+    <h2>Travel Booking Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <h3>✈ Flight Booking</h3>
+        <p>Book your international and domestic flights easily with us.</p>
+      </div>
+      <div class="service-card">
+        <h3>🛂 Visa & Passport</h3>
+        <p>Get professional help with visa and passport services.</p>
+      </div>
+      <div class="service-card">
+        <h3>🌍 Travel Insurance</h3>
+        <p>Travel safely with comprehensive insurance packages.</p>
+      </div>
+      <div class="service-card">
+        <h3>🏨 Hotels & Resorts</h3>
+        <p>Book luxurious stays at the best hotels and resorts.</p>
+      </div>
+      <div class="service-card">
+        <h3>🚢 Cruise Booking</h3>
+        <p>Set sail on a luxurious cruise to stunning destinations.</p>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+  <!-- Tour Packages Section -->
+  <section id="tour-packages" class="section">
+    <h2>Exclusive Tour Packages</h2>
+    <div class="tour-packages">
+      <div class="tour-card">
+        <h3>🕍 Pilgrimage Tours</h3>
+        <p>Embark on a spiritual journey with our guided tours.</p>
+      </div>
+      <div class="tour-card">
+        <h3>👩‍❤‍👨 Honeymoon Tours</h3>
+        <p>Experience romance with our honeymoon packages.</p>
+      </div>
+      <div class="tour-card">
+        <h3>🐯 Wildlife Tours</h3>
+        <p>Explore the wonders of wildlife on a thrilling adventure.</p>
+      </div>
+      <div class="tour-card">
+        <h3>⛱ Leisure Tours</h3>
+        <p>Relax and unwind with our leisure tours to scenic spots.</p>
+      </div>
+      <div class="tour-card">
+        <h3>🧳 Business Trade Fair Tours</h3>
+        <p>Attend global trade fairs and business events with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>For more information, contact:</p>
+    <p class="contact-info">👤 A. Sathiskumar</p>
+    <p class="contact-info">📲 9442515001, 9444215001</p>
+    <p class="contact-info">🧳 Arasi Air Travels, Uchippuli, Ramanathapuram-623534</p>
+  </footer>
+
+</body>
+</html>
